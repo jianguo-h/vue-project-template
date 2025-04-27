@@ -8,3 +8,9 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
+
+declare module '*.vue' {
+  import { defineComponent } from 'vue';
+  const component: ReturnType<typeof defineComponent>;
+  export default component;
+}

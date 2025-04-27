@@ -1,4 +1,4 @@
-# vite-config-for-vue-project
+# vue-project-template
 
 > 为 `vue` 项目开发而搭建的一套 `vite` 基础配置，在此配置上进行扩展，支持 ts，推荐使用 vs code 编辑器
 
@@ -27,16 +27,22 @@
 ├── tsconfig.json                               // ts编译配置文件
 ```
 
-## 启动
+## Get Started
+
+Install [`node >= 21.1.0`](https://nodejs.org) and [`pnpm >= 10.9.0`](https://pnpm.io/)
+
+## Development
 
 ```bash
-# 安装依赖
-npm i or cnpm i
-如果安装了yarn, 也可以yarn install
+  # 1. enable pnpm
+  corepack enable pnpm
 
-# 开发坏境下编译
-npm run start / yarn start
+  2. add COREPACK_ENABLE_AUTO_PIN env to your env file(eg: /etc/profile)
+  export COREPACK_ENABLE_AUTO_PIN=0
 
-# 打包
-npm run build / yarn build
+  # 3. Install packages
+  pnpm install
+
+  # Start dev server
+  4. pnpm start --port 3001
 ```
